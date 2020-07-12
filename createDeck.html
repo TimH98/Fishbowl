@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<html>
+    <head>
+        <title>Create Cards</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 class="pageTitle">Create Cards</h1>
+        <form style="display: flex" id="cardForm">
+            <div class="mdl-textfield mdl-js-textfield" style="margin: auto; width: 90%">
+                <input class="mdl-textfield__input cardEntry" type="text" id="cardText">
+                <label class="mdl-textfield__label cardEntryLabel" for="cardText" id="cardTextLabel">Write Anything</label>
+            </div>
+        </form>
+        <p id="counter" class="info">0 cards in deck</p>
+        <button class="mdl-button mdl-js-button mdl-button--raised
+                        mdl-js-ripple-effect mdl-button--colored fullButton"
+                id="addCard">
+            <h2 class="buttonText">Add Card</h2>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--raised
+                        mdl-js-ripple-effect mdl-button--accent fullButton"
+                id="startGame">
+            <h2 class="buttonText">Start Game</h2>
+        </button>
+    </body>
+    <script src="js/createDeck.js"></script>
+</html>

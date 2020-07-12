@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<html>
+    <head>
+        <title>Fishbowl</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 class="pageTitle">Fishbowl</h1>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored fullButton"
+                id="new">
+            <h2 class="buttonText">New Game</h2>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent fullButton"
+                id="instructions">
+            <h2 class="buttonText">How to Play</h2>
+        </button>
+    </body>
+    <script type="text/javascript">
+        document.getElementById("new").onclick = function () {
+            location.href = "createDeck.html";
+        };
+    </script>
+</html>

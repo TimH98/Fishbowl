@@ -1,0 +1,58 @@
+.fullButton {
+    height: 18vw;
+    /*margin: 2% 4% 2% 4%;*/
+    margin: 2% auto;
+    width: 90%;
+    border-radius: 25px;
+}
+
+.buttonText {
+    text-transform: none;
+    font-size: 10vw;
+}
+
+.pageTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15vw;
+}
+
+.pageSubtitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 10vw;
+}
+
+.cardEntry {
+    font-size: 10vw;
+    height: 15vw;
+    background-color: #EEE;
+    border-radius: 25px;
+}
+
+.cardEntryLabel {
+    font-size: 10vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    font-size: 5vw;
+    text-align: center;
+    font-weight: bold;
+    line-height: 6vw;
+    padding: 2%;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    position: fixed;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
