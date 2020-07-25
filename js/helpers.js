@@ -54,13 +54,13 @@ function shuffle(array) {
         return this;
     }
 
-    handleTouchMove(evt) {
+    handleTouchEnd(evt) {
         if ( ! this.xDown || ! this.yDown ) {
             return;
         }
 
-        var xUp = evt.touches[0].clientX;
-        var yUp = evt.touches[0].clientY;
+        var xUp = evt.changedTouches[0].clientX;//evt.touches[0].clientX;
+        var yUp = evt.changedTouches[0].clientY;//evt.touches[0].clientY;
 
         this.xDiff = this.xDown - xUp;
         this.yDiff = this.yDown - yUp;
@@ -85,8 +85,8 @@ function shuffle(array) {
     }
 
     run() {
-        this.element.addEventListener('touchmove', function(evt) {
-            this.handleTouchMove(evt);
+        this.element.addEventListener('touchend', function(evt) {
+            this.handleTouchEnd(evt);
         }.bind(this), false);
     }
 }

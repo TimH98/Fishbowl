@@ -6,7 +6,7 @@
 
 <html>
     <head>
-        <title>Start Round</title>
+        <title>Fishbowl</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -15,11 +15,18 @@
             <h1 class="pageTitle" id="cardText"></h1>
         </div>
         <p id="counter" class="info">0 cards remaining</p>
-        <button class="mdl-button mdl-js-button mdl-button--raised
-                        mdl-js-ripple-effect mdl-button--accent fullButton"
-                id="pass">
-            <h2 class="pass">Pass</h2>
-        </button>
+        <div class="gameplayButtonContainer">
+            <button class="mdl-button mdl-js-button mdl-button--raised
+                            mdl-js-ripple-effect mdl-button--accent gameplayButton"
+                    id="pass">
+                <h2 class="buttonText">Pass</h2>
+            </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised
+                            mdl-js-ripple-effect mdl-button--colored gameplayButton"
+                    id="guessed">
+                <h2 class="buttonText">Correct</h2>
+            </button>
+        </div>
     </body>
     <script src="js/gameplay.js"></script>
 </html>

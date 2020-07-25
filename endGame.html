@@ -5,31 +5,33 @@
 
 <html>
     <head>
-        <title>Start Round</title>
+        <title>Game Over</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="scoreboard">
+        <div class="bigScoreboard" style="height: 30vw">
             <span style="background-color: red; flex: 1">
-                <h1 class="score"
+                <h1 class="bigScore"
                     id="redScore">
                     5</h1>
             </span>
             <span style="background-color: blue; flex: 1">
-                <h1 class="score"
+                <h1 class="bigScore"
                     id="blueScore">
                     5</h1>
             </span>
         </div>
-        <h1 class="pageTitle" id="team"></h1>
-        <h2 class="pageSubtitle" id="phaseNum"></h2>
-        <p id="rules" class="info"></p>
-        <p id="counter" class="info">0 cards remaining</p>
-        <button class="mdl-button mdl-js-button mdl-button--raised
-                        mdl-js-ripple-effect mdl-button--accent fullButton"
-                id="startRound">
-            <h2 class="buttonText">Start Round</h2>
+        <h1 class="pageTitle" id="winner"></h1>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored fullButton"
+                id="new">
+            <h2 class="buttonText">New Game</h2>
         </button>
     </body>
-    <script src="js/startRound.js"></script>
+    <script src="js/endGame.js"></script>
+    <script type="text/javascript">
+        document.getElementById("new").onclick = function () {
+            sessionStorage.clear();
+            location.href = "createDeck.html";
+        };
+    </script>
 </html>

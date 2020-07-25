@@ -1,6 +1,5 @@
 .fullButton {
     height: 18vw;
-    /*margin: 2% 4% 2% 4%;*/
     margin: 2% auto;
     width: 90%;
     border-radius: 25px;
@@ -44,6 +43,47 @@
     font-weight: bold;
     line-height: 6vw;
     padding: 2%;
+}
+
+.gameplayButtonContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 2%
+}
+
+.gameplayButton {
+    flex: 1;
+    height: 25vw;
+    margin: 2%;
+    border-radius: 40px;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: row;
+    height: 20vw;
+}
+
+.score {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15vw;
+    line-height: 15vw;
+    color: white;
+}
+
+.bigScoreboard {
+    display: flex;
+    flex-direction: row;
+    height: 30vw;
+}
+
+.bigScore {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25vw;
+    line-height: 25vw;
+    color: white;
 }
 
 html, body {
